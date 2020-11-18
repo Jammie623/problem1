@@ -1,21 +1,4 @@
-input.onButtonPressed(Button.A, function () {
-    basic.showLeds(`
-        . . # . .
-        . # . . .
-        # # # # #
-        . # . . .
-        . . # . .
-        `)
+radio.onReceivedString(function (receivedString) {
+    basic.showString(receivedString)
 })
-input.onButtonPressed(Button.AB, function () {
-    basic.showIcon(IconNames.Happy)
-})
-input.onButtonPressed(Button.B, function () {
-    basic.showLeds(`
-        . . # . .
-        . . . # .
-        # # # # #
-        . . . # .
-        . . # . .
-        `)
-})
+radio.setGroup(5)
